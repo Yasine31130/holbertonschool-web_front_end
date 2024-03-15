@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Set foreground color for body */
+body {
+  color: #161616;
+}
+
+/* Set foreground color for all anchor elements */
+a {
+  color: #161616;
+}
+
+/* Hide all elements with class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set foreground color for all elements with class card-category */
+.card-category {
+  color: #D73953;
+}
+
+/* Set foreground color for all elements with class section-tagline */
+.section-tagline {
+  color: #D73953;
+}
+
+/* Define custom properties on root element */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* Reset color for section-tagline and card-category to color-primary */
+.section-tagline, .card-category {
+  color: var(--color-primary);
+}
+
+/* Reset color for body and anchor to text-color */
+body, a {
+  color: var(--text-color);
+}
+
+/* Define custom font-family properties on root element */
+:root {
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Set font-family for body to font-family-base */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* Set font-family for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Set font-family for links */
+a {
+  font-family: var(--font-family-base);
+}
+
+/* Define custom font size properties on root element */
+:root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+}
+
+/* Set font size for html element to 62.5% */
+html {
+  font-size: 62.5%;
+}
+
+/* Set font size for body to font-size-medium */
+body {
+  font-size: var(--font-size-medium);
+}
+
+/* Define custom font weight properties on root element */
+:root {
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* Set font weight for fonts in body to font-weight-regular */
+body {
+  font-weight: var(--font-weight-regular);
+}
+
+/* Set font weight for fonts in headings to font-weight-bold */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Shift previous fonts down and add Open Sans to font-family-base */
+:root {
+  --font-family-base: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Shift previous fonts down and add Raleway to font-family-title */
+:root {
+  --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Define custom line-height properties on root element */
+:root {
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+}
+
+/* Set minimum line box height for fonts in body to line-height-base */
+body {
+  line-height: var(--line-height-base);
+}
+
+/* Remove text decoration on anchor elements */
+a {
+  text-decoration: none;
+}
+
+/* Define custom alignment property for section headers */
+:root {
+  --section-header-align: center;
+}
+
+/* Center align section headers */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* Define custom text transformation property for section taglines */
+:root {
+  --section-tagline-transform: uppercase;
+}
+
+/* Style section taglines */
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Define custom properties for section titles */
+:root {
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+}
+
+/* Style section titles */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
